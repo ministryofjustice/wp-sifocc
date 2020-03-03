@@ -11,7 +11,6 @@ $registrar->addInstance(\Dxw\SifoccTheme\Theme\Scripts::class, new \Dxw\SifoccTh
     $registrar->getInstance(\Dxw\Iguana\Theme\Helpers::class)
 ));
 
-$registrar->addInstance(\Dxw\SifoccTheme\Theme\Analytics::class, new \Dxw\SifoccTheme\Theme\Analytics());
 
 //Map
 $registrar->addInstance(\Dxw\SifoccTheme\Theme\Map\Country::class, new \Dxw\SifoccTheme\Theme\Map\Country());
