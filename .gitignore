@@ -1,0 +1,36 @@
+# Editor
+.idea*
+._D*
+._.*
+.sql
+
+# Application
+web/app/plugins/*
+web/app/mu-plugins/*/
+web/app/upgrade
+web/app/languages
+web/app/uploads/*
+!web/app/plugins/.gitkeep
+!web/app/uploads/.gitkeep
+!web/app/mu-plugins/moj/
+web/.well-known/security.txt
+
+web/app/themes/sifocc-theme/dist
+web/app/themes/sifocc-theme/node_modules
+
+
+# WordPress
+web/wp
+web/.htaccess
+
+# Dotenv
+.env
+.env.*
+!.env.example
+
+# Composer
+vendor/*
+!vendor/.gitkeep
+
+web/app/db.php
+
