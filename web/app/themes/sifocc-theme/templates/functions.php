@@ -3,6 +3,8 @@
 // Anything you might want to do here should be done in app/
 //
 
+require __DIR__ .'/../inc/classes/Pagination.php';
+
 require __DIR__ .'/../inc/setup.php';
 require __DIR__ .'/../inc/widgets.php';
 

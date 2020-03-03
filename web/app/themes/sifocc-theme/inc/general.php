@@ -36,3 +36,39 @@ if (!function_exists('sifocc_get_archive_title')) {
         }
     }
 }
+
+if (!function_exists('sifocc_pagination')) {
+
+    function sifocc_pagination($q = null, $return = false)
+    {
+        global $wp_query;
+        global $paged;
+
+        if ($q === null) {
+            $q = $wp_query;
+        }
+
+        $args = $q->query;
+
+        $max = intval($q->max_num_pages);
+        $paged = get_query_var('paged') ? absint(get_query_var('paged')) : 1;
+
+        // Stop execution if there's only 1 page
+        if ($max <= 1) {
+            return;
+        }
+
+        $pagination = new \SIFOCC\Pagination($paged, $max, 2, 1, function ($n) use ($args) {
+            $args['paged'] = $n;
+
+            return add_query_arg($args, get_bloginfo('url'));
+        });
+
+        if ($return) {
+            return $pagination->render();
+        } else {
+            echo $pagination->render();
+        }
+
+    }
+}
