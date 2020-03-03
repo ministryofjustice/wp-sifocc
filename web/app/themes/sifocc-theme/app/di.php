@@ -6,11 +6,6 @@ $registrar->addInstance(\Dxw\Iguana\Theme\LayoutRegister::class, new \Dxw\Iguana
 ));
 $registrar->addInstance(\Dxw\Iguana\Extras\UseAtom::class, new \Dxw\Iguana\Extras\UseAtom());
 
-// Libraries and support code
-$registrar->addInstance(\Dxw\SifoccTheme\Lib\Whippet\TemplateTags::class, new \Dxw\SifoccTheme\Lib\Whippet\TemplateTags(
-    $registrar->getInstance(\Dxw\Iguana\Theme\Helpers::class)
-));
-
 // Theme behaviour, media, assets and template tags
 $registrar->addInstance(\Dxw\SifoccTheme\Theme\Scripts::class, new \Dxw\SifoccTheme\Theme\Scripts(
     $registrar->getInstance(\Dxw\Iguana\Theme\Helpers::class)

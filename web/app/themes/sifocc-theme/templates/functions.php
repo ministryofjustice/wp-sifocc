@@ -10,6 +10,8 @@ require __DIR__ .'/../inc/cpt/cpt-events.php';
 require __DIR__ .'/../inc/cpt/cpt-members.php';
 require __DIR__ .'/../inc/cpt/cpt-regions.php';
 
+require __DIR__ .'/../inc/general.php';
+
 /*Old Framework*/
 $registrar = require __DIR__.'/../app/load.php';
 $registrar->register();

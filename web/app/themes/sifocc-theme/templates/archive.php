@@ -1,8 +1,8 @@
 <div class="page-section">
     <section class="container">
         <header>
-            <h1><?php echo h()->w_template_title(); ?></h1>
-            <?php if (category_description()) :?>
+            <h1><?php echo sifocc_get_archive_title(); ?></h1>
+            <?php if (category_description()) : ?>
                 <h2><?php echo category_description(); ?></h2>
             <?php endif; ?>
         </header>
