@@ -14,6 +14,8 @@ require __DIR__ .'/../inc/cpt/cpt-regions.php';
 
 require __DIR__ .'/../inc/general.php';
 require __DIR__ .'/../inc/analytics.php';
+require __DIR__ .'/../inc/map.php';
+
 /*Old Framework*/
 $registrar = require __DIR__.'/../app/load.php';
 $registrar->register();
