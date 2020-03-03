@@ -1,0 +1,101 @@
+.article {
+
+  .entry {
+
+    img {
+      margin-top: $small;
+    }
+  }
+}
+
+.featured-article-list-item,
+.article-list-item,
+.event-list-item,
+.discussion-list-item {
+
+  h1 {
+    margin-top: 0;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.featured-article-list-item {
+  display: flex;
+  @include flex-direction(row);
+  align-items: flex-start;
+  margin-top: $base;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+  @include breakpoint(tablet) {
+    background-color: $lightGrey;
+    padding: $small;
+  }
+
+  // No flexbox support
+  .no-flexbox & {
+    width: 100%;
+    display: inline-block;
+  }
+
+  .date {
+    margin-right: $base;
+    background-color: $mediumGrey;
+    color: $textColour;
+    text-align: center;
+
+    // No flexbox support
+    .no-flexbox & {
+      float: left;
+      width: 80px;
+    }
+
+    span {
+      display: block;
+    }
+
+    .date-day {
+      font-size: em(32);
+      line-height: 1;
+      font-family: $headingFont;
+      font-weight: 700;
+      padding: $tiny;
+    }
+
+    .date-month {
+      background-color: $grey;
+      font-size: em(13);
+      line-height: 1;
+      padding: $tiny $tiny/2;
+    }
+  }
+
+  .content {
+
+    // No flexbox support
+    .no-flexbox & {
+      float: left;
+      width: 78%;
+    }
+  }
+
+  h1 {
+    @extend h2;
+  }
+}
+
+.article-list-item,
+.event-list-item,
+.discussion-list-item {
+  padding: $small 0;
+  border-bottom: 1px solid $grey;
+
+  h1 {
+    @extend h3;
+  }
+}

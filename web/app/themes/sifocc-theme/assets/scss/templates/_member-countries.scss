@@ -1,0 +1,55 @@
+.page-section-country {
+
+  section {
+
+    article {
+      margin-top: $base;
+    }
+  }
+
+  aside {
+
+    img {
+      margin-top: $small;
+
+      @include breakpoint(tablet) {
+        max-width: 50%;
+      }
+
+      @include breakpoint(phone) {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.post-type-archive-members {
+
+  .map-banner {
+    height: 500px;
+    background-size: contain;
+    align-items: flex-start;
+
+    @include breakpoint(tablet) {
+      height: 450px;
+    }
+
+    @include breakpoint(phone) {
+      height: 350px;
+      background-size: cover;
+    }
+  }
+}
+
+.member-list-item {
+  margin: $base 0;
+  border-top: 1px solid $grey;
+
+  &:first-of-type {
+    border-top: none;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}

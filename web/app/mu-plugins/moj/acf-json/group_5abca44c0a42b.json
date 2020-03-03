@@ -1,0 +1,83 @@
+{
+    "key": "group_5abca44c0a42b",
+    "title": "Page overview",
+    "fields": [
+        {
+            "key": "field_5abca467b888e",
+            "label": "Contents",
+            "name": "contents",
+            "type": "repeater",
+            "instructions": "A list of main page sections that you would like to link to. You will need to add anchor links to the headings manually using the 'Anchor' button.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "row",
+            "button_label": "Add List Item",
+            "sub_fields": [
+                {
+                    "key": "field_5e5d902703855",
+                    "label": "Link text",
+                    "name": "link_text",
+                    "type": "text",
+                    "instructions": "For example, heading of the section you would like to link to.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5e5d904c03856",
+                    "label": "Short URL",
+                    "name": "short_url",
+                    "type": "text",
+                    "instructions": "Anchor link, same as the anchor ID.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1583190177
+}

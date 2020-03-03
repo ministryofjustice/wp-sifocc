@@ -1,0 +1,54 @@
+form {
+
+  input,
+  textarea,
+  label {
+    line-height: 1.4;
+    font-size: em(18);
+    font-family: $bodyFont;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  label {
+    @extend h4;
+    display: block;
+    margin-top: $small;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="url"],
+  input[type="password"],
+  textarea {
+    border: 1px solid $mediumGrey;
+    padding: $tiny;
+
+    &:focus {
+      box-shadow: none;
+      outline-offset: 0;
+    }
+  }
+}
+
+.form-group {
+  margin-top: $base;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+#commentform {
+
+  input[type="text"],
+  input[type="email"],
+  input[type="url"],
+  textarea {
+    width: 80%;
+
+    @include breakpoint(tablet) {
+      width: 100%;
+    }
+  }
+}

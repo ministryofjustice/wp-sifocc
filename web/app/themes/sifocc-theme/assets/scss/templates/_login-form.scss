@@ -1,0 +1,11 @@
+.tml {
+    max-width: none;
+    margin-top: $base;
+    .input {
+        margin-top: 0;
+        padding: $tiny;
+    }
+    .tml-submit-wrap {
+        text-align: right;
+    }
+}

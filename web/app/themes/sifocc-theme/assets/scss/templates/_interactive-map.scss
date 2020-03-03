@@ -1,0 +1,84 @@
+.interactive-map-container {
+  background-color: $lightGrey;
+  padding: $large 0;
+
+  @include breakpoint(laptop) {
+    padding-top: $base;
+    padding-bottom: $base;
+  }
+
+  // IE8 support
+  .lt-ie9 & {
+    height: 500px;
+    background: $lightGrey url("#{$imagePath}/world-map.png") no-repeat center center;
+  }
+}
+
+#interactive-map {
+  @extend .row;
+  display: flex;
+  @include flex-direction(row);
+  padding: 0 $large;
+  position: relative;
+  align-items: flex-start;
+
+  // No flexbox support
+  .no-flexbox & {
+    display: block;
+  }
+
+  @include breakpoint(laptop) {
+    padding-left: $base;
+    padding-right: $base;
+  }
+
+  svg {
+    max-width: 65%;
+
+    // No flexbox support
+    .no-flexbox & {
+      float: left;
+    }
+
+    g {
+
+      &.active {
+        fill: $green;
+        cursor: pointer;
+      }
+
+      &:hover,
+      &:focus {
+        fill: $green;
+        cursor: pointer;
+      }
+    }
+  }
+
+  aside {
+    width: 35%;
+    padding: 0;
+    border-top: 5px solid $primary;
+
+    // No flexbox support
+    .no-flexbox & {
+      width: 30%;
+      float: left;
+      margin-left: 5%;
+    }
+
+    h4 {
+      margin-top: $base;
+    }
+
+    dd {
+      padding-bottom: 0.2em;
+    }
+  }
+
+  // IE8 support
+  .lt-ie9 & {
+    display: none;
+    visibility: hidden;
+  }
+}

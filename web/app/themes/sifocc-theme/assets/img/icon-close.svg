@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="12px" viewBox="0 0 15 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Site-look-and-feel" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tablet-homepage-with-opened-menu" transform="translate(-24.000000, -347.000000)" fill="#FFFFFF">
+            <g id="Header">
+                <g id="Menu" transform="translate(22.000000, 347.000000)">
+                    <g id="Group" transform="translate(2.000000, 0.000000)">
+                        <rect id="Rectangle-2" transform="translate(7.304348, 6.000000) rotate(-40.000000) translate(-7.304348, -6.000000) " x="-1.04347826" y="5.2173913" width="16.6956522" height="1.56521739"></rect>
+                        <rect id="Rectangle-2" transform="translate(7.304348, 6.000000) rotate(40.000000) translate(-7.304348, -6.000000) " x="-1.04347826" y="5.2173913" width="16.6956522" height="1.56521739"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

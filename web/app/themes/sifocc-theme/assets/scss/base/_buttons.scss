@@ -1,0 +1,26 @@
+button,
+.button {
+  background: $accent;
+  padding: $small $base;
+  border: none;
+  color: $white;
+  border-bottom: none;
+  transition: all 0.2s ease-in-out;
+
+  // IE8 support
+  .lt-ie9 & {
+    text-decoration: none;
+  }
+
+  &:hover,
+  &:focus {
+    background: lighten($accent, 10);
+    color: $white;
+    cursor: pointer;
+  }
+}
+
+.button-mini {
+  @extend .button;
+  padding: $tiny $small;
+}

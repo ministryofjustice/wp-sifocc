@@ -1,0 +1,96 @@
+.global-footer {
+  background-color: $green;
+  margin-top: $large;
+  padding-top: $base;
+  padding-bottom: $base;
+
+  h4, p, a, li {
+    color: $white;
+  }
+
+  h4 {
+    margin-top: 0;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  p, li {
+    font-size: em(14);
+  }
+
+  a {
+    border-bottom: 1px solid rgba($white, 0.7);
+
+    &:hover,
+    &:focus {
+      border-bottom-color: $white;
+    }
+  }
+
+  section {
+    @include grid-column(4);
+    margin-bottom: $base;
+    @include grid-media($grid-laptop) {
+      @include grid-column(4);
+    }
+    @include grid-media($grid-mobile) {
+      @include grid-column(2);
+    }
+
+    // IE8 support
+    .lt-ie9 & {
+      width: 33%;
+      float: left;
+    }
+
+    p {
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .footer-widget {
+    @include grid-column(12);
+    margin-top: 0;
+    margin-bottom: 0;
+    @include grid-media($grid-laptop) {
+      @include grid-column(12);
+    }
+    @include grid-media($grid-mobile) {
+      @include grid-column(2);
+    }
+
+    // IE8 support
+    .lt-ie9 & {
+      width: 100%;
+    }
+
+    h3 {
+      color: white;
+    }
+  }
+
+  .copyright {
+    @include grid-column(12);
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    @include grid-media($grid-laptop) {
+      @include grid-column(12);
+    }
+    @include grid-media($grid-mobile) {
+      @include grid-column(2);
+    }
+
+    // IE8 support
+    .lt-ie9 & {
+      width: 100%;
+    }
+  }
+}

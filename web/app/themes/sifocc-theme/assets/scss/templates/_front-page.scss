@@ -1,0 +1,105 @@
+body.home {
+
+  .page-section {
+
+    &-feed {
+
+      header {
+        @include grid-column(12);
+        @include grid-media($grid-laptop) {
+          @include grid-column(12);
+        }
+        @include grid-media($grid-mobile) {
+          @include grid-column(2);
+        }
+
+        // No flexbox support
+        .no-flexbox & {
+          width: 100%;
+          float: none;
+        }
+      }
+
+      .featured-news,
+      .latest-news {
+        @include grid-column(6);
+        @include grid-media($grid-laptop) {
+          @include grid-column(6);
+        }
+        @include grid-media($grid-mobile) {
+          @include grid-column(2);
+        }
+
+        // No flexbox support
+        .no-flexbox & {
+          display: inline-block;
+          width: 47%;
+        }
+      }
+
+      .latest-news {
+        border-top: 1px solid $grey;
+      }
+    }
+  }
+}
+
+.featured-news,
+.latest-news {
+  margin-top: $base;
+}
+
+.page-section {
+
+  &-text {
+    @include grid-media($grid-mobile) {
+      display: block;
+    }
+
+    // No flexbox support
+    .no-flexbox & {
+      display: block;
+    }
+
+    > article,
+    > section {
+      @include grid-column(6);
+      @include grid-media($grid-laptop) {
+        @include grid-column(6);
+      }
+      @include grid-media($grid-mobile) {
+        @include grid-column(2);
+        display: block;
+        margin-top: $large;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+
+.map-banner {
+  height: 300px;
+  background: $lightGrey url("#{$imagePath}/world-map.svg") no-repeat center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  // No flexbox support
+  .no-flexbox & {
+    position: relative;
+
+    a {
+      position: absolute;
+      top: 40%;
+      left: 40%;
+    }
+
+    // No SVG support
+    .no-svgasimg & {
+      background-image: url("#{$imagePath}/world-map.png");
+    }
+  }
+}

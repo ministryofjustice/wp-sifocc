@@ -1,0 +1,40 @@
+/**
+ * Neat grid. Documentation: https://neat.bourbon.io/docs/latest/
+ */
+$neat-grid: (
+  columns: 12,
+  gutter: $large,
+);
+
+$grid-laptop: (
+  columns: 12,
+  gutter: $base,
+  media: "screen and (max-width: 1024px)",
+);
+
+$grid-mobile: (
+  columns: 2,
+  gutter: $base,
+  media: "screen and (max-width: 768px)",
+);
+
+.row {
+  @include grid-container;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-section {
+  @extend .row;
+  padding: $large 0;
+
+  > .container {
+    @include grid-column(8);
+    @include grid-media($grid-laptop) {
+      @include grid-column(8);
+    }
+    @include grid-media($grid-mobile) {
+      @include grid-column(2);
+    }
+  }
+}

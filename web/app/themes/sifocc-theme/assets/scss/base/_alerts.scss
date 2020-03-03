@@ -1,0 +1,20 @@
+.alert {
+  width: 100%;
+  background-color: $orange;
+
+  p {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: $small $base;
+
+    a {
+      color: $textColour;
+      border-bottom: 1px solid rgba($textColour, 0.8);
+
+      &:hover,
+      &:focus {
+        border-bottom-color: $textColour;
+      }
+    }
+  }
+}

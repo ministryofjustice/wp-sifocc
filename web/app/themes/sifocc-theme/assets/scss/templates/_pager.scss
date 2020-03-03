@@ -1,0 +1,48 @@
+.pager {
+  margin-top: $base;
+}
+
+.pagination {
+  margin: auto;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+
+  li {
+    display: inline-block;
+    margin-left: 1px;
+    padding-bottom: 0;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &.arrow {
+      font-weight: 700;
+    }
+
+    &.current {
+
+      a {
+        background-color: $lightGrey;
+        color: $textColour;
+
+        &:hover,
+        &:focus {
+          cursor: default;
+          background-color: $lightGrey;
+        }
+      }
+    }
+
+    a {
+      border-bottom: none;
+      padding: $tiny $small;
+
+      &:hover,
+      &:focus {
+        background-color: $lightGrey;
+      }
+    }
+  }
+}

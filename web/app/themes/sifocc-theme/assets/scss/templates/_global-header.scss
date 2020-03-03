@@ -1,0 +1,102 @@
+.global-header {
+  background-color: $primary;
+
+  // Image background only on the homepage
+  .home & {
+    background-image: url("#{$imagePath}/world-map-header-background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+
+  a {
+    border-bottom: none;
+    padding-bottom: 0;
+    color: $white;
+  }
+
+  .logo-container {
+    @include grid-column(12);
+    display: flex;
+    @include flex-direction(row);
+    align-items: center;
+    padding-top: $base;
+    padding-bottom: $base;
+    @include grid-media($grid-laptop) {
+      @include grid-column(12);
+    }
+    @include grid-media($grid-mobile) {
+      @include grid-column(2);
+    }
+
+    h1 {
+      width: 82%;
+      float: right;
+      margin-bottom: 0;
+      margin-left: 5%;
+      text-align: right;
+      font-size: em(24);
+    }
+
+    // Different header on the homepage
+    .home & {
+      @include grid-column(8);
+      @include grid-push(2);
+      display: block;
+      padding-top: $large;
+      padding-bottom: $large;
+      text-align: center;
+      @include grid-media($grid-laptop) {
+        @include grid-column(8);
+        @include grid-push(2);
+      }
+      @include grid-media($grid-mobile) {
+        @include grid-column(2);
+      }
+
+      h1 {
+        width: 100%;
+        float: none;
+        margin: 1.03125em 0 0.24444445em 0;
+        text-align: center;
+        font-size: em(36);
+      }
+    }
+
+    a.logo {
+      display: inline-block;
+      width: 149px;
+      height: 46px;
+      margin: 0;
+      background: url("#{$imagePath}/sifocc-logo-white.svg") no-repeat 0 0;
+      background-size: 149px 46px;
+
+      // No SVG support
+      .no-svgasimg & {
+        background-image: url("#{$imagePath}/sifocc-logo-white.png");
+      }
+    }
+
+    img {
+      display: block;
+    }
+  }
+
+  h1, h2 {
+    color: $white;
+  }
+
+  h2 {
+    display: none;
+    visibility: hidden;
+
+    // Site description only on homepage
+    .home & {
+      display: block;
+      visibility: visible;
+      margin-bottom: 0;
+      font-family: $bodyFont;
+      line-height: normal;
+    }
+  }
+}

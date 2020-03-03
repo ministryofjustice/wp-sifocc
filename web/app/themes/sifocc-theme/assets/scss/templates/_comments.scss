@@ -1,0 +1,109 @@
+#comments {
+  margin-top: $small;
+  border-top: 1px solid $grey;
+}
+
+ol.comments-list {
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-bottom: $large;
+  border-bottom: 1px solid $grey;
+  list-style: none;
+
+  li {
+    margin-bottom: $large;
+    padding-bottom: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin-top: $base;
+    margin-bottom: $large;
+    padding-left: $base;
+    border-left: 5px solid $mediumGrey;
+
+    ul {
+      border-left: none;
+    }
+  }
+}
+
+.comment-body {
+
+  > br {
+    display: none;
+  }
+
+  .comment-author {
+    margin-bottom: $tiny;
+  }
+
+  .comment-meta {
+    @extend small;
+  }
+
+  .reply {
+
+    a {
+      display: inline-block;
+      @extend .button-mini;
+    }
+  }
+
+  .comment-awaiting-moderation {
+    display: block;
+    font-style: normal;
+    margin: $tiny 0;
+    padding: $tiny;
+    background-color: $lightGrey;
+  }
+}
+
+#comment-form {
+
+  header {
+    @extend .row;
+
+    h2 {
+      width: 70%;
+      float: left;
+
+      @include breakpoint(phone) {
+        width: 100%;
+        float: none;
+      }
+    }
+
+    .cancel-comment-reply {
+      width: 30%;
+      float: right;
+      margin-top: 2.5em;
+      text-align: right;
+
+      @include breakpoint(phone) {
+        width: 100%;
+        float: none;
+        display: block;
+        text-align: left;
+        margin-top: $base;
+        margin-bottom: $base;
+      }
+
+      a {
+        background-color: $mediumGrey;
+        border-bottom: none;
+        padding: $tiny;
+        color: $darkGrey;
+
+        &:hover,
+        &:focus {
+          background-color: lighten($mediumGrey, 5);
+        }
+      }
+    }
+  }
+}

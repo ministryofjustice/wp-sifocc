@@ -1,0 +1,146 @@
+.header-navigation {
+  border-top: 1px solid rgba($white,0.2);
+  background: $primary;
+  position: relative;
+
+  // IE8 support
+  .lt-ie9 & {
+    border-top: 1px solid $white;
+  }
+
+  a {
+    color: $white;
+    border-bottom: none;
+
+    // IE8 support
+    .lt-ie9 & {
+      text-decoration: none;
+    }
+  }
+
+  .navigation-toggle {
+    @include grid-media($grid-mobile) {
+      @include grid-column(1);
+    }
+
+    @include breakpoint(tablet) {
+      display: inline-block;
+      background: url("#{$imagePath}/icon-menu.svg") no-repeat left center;
+      padding: 1.2em 0 1.2em 2em;
+      line-height: 1;
+      text-align: left;
+
+      &.open {
+        background-image: url("#{$imagePath}/icon-close.svg");
+      }
+    }
+  }
+
+  .menu-header {
+    @include grid-column(8);
+    @include grid-media($grid-laptop) {
+      @include grid-column(8);
+    }
+
+    @include breakpoint(tablet) {
+      display: none;
+
+      &.expanded {
+        width: 100%;
+        display: inline-block;
+        margin: 0;
+        background-color: $darkNavy;
+        padding: 0;
+      }
+    }
+
+    ul {
+      list-style: none;
+      margin: $small 0 $small 0;
+      padding-left: 0;
+
+      @include breakpoint(tablet) {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      li {
+        display: inline-block;
+        margin-left: $base;
+        padding-bottom: 0;
+
+        @include breakpoint(laptop) {
+          margin-left: $small;
+        }
+
+        // IE8 support
+        .lt-ie9 & {
+          float: left;
+        }
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        @include breakpoint(tablet) {
+          display: block;
+          margin-left: 0;
+        }
+      }
+
+      a {
+        padding-bottom: 0.75em;
+        border-bottom: 5px solid transparent;
+
+        &:hover,
+        &:focus {
+          border-bottom-color: lighten($accent, 10);
+        }
+
+        @include breakpoint(tablet) {
+          display: block;
+          padding: $small $base $small $small;
+          border-bottom: none;
+
+          &:hover,
+          &:focus {
+            background-color: darken($darkNavy, 5);
+          }
+        }
+      }
+
+      .current-menu-item,
+      .current_page_item,
+      .current-page-ancestor {
+
+        a {
+          border-bottom-color: $white;
+
+          @include breakpoint(tablet) {
+            background-color: $accent;
+          }
+        }
+      }
+    }
+  }
+
+  .cta {
+    @include grid-column(4);
+    @include grid-media($grid-laptop) {
+      @include grid-column(4);
+    }
+    @include grid-media($grid-mobile) {
+      @include grid-column(1);
+    }
+
+    @include breakpoint(tablet) {
+      position: absolute;
+      right: $base;
+      top: 0;
+    }
+
+    .button {
+      float: right;
+    }
+  }
+}

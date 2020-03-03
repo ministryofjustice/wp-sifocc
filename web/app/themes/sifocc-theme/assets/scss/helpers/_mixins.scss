@@ -1,0 +1,36 @@
+// Breakpoints
+// https://responsivedesign.is/develop/getting-started-with-sass-and-breakpoint-mixin/
+
+@mixin breakpoint($point) {
+  @if $point == laptop {
+    @media (max-width: 64em) { @content ; } // 1024px
+  }
+  @else if $point == tablet {
+    @media (max-width: 48em) { @content ; } // 768px
+  }
+  @else if $point == phone {
+    @media (max-width: 37.5em)  { @content ; } // 600px
+  }
+}
+
+// Typography
+// https://www.degordian.com/education/blog/best-practice-for-responsive-typography/
+
+$default-font-size: 18;
+
+// unitless function to convert px to em
+@function em($pixels, $context: $default-font-size) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+  @return $pixels / $context * 1em;
+}
+
+@mixin flex-direction($value) {
+  -webkit-flex-direction: $value;
+  -ms-flex-direction: $value;
+  flex-direction: $value;
+}

@@ -1,0 +1,28 @@
+aside {
+  @include grid-column(4);
+  background-color: $lightGrey;
+  padding: $small;
+  @include grid-media($grid-laptop) {
+    @include grid-column(4);
+  }
+  @include grid-media($grid-mobile) {
+    @include grid-column(2);
+    margin-top: $base;
+  }
+
+  h3 {
+    margin-top: 0;
+  }
+
+  ul {
+    margin-bottom: 0;
+  }
+
+  div {
+    margin-top: $base;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+}
