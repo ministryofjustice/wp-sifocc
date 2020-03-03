@@ -42,5 +42,3 @@ $registrar->addInstance(\Dxw\SifoccTheme\Theme\Map\Script::class, new \Dxw\Sifoc
 $registrar->addInstance(\Dxw\SifoccTheme\Theme\Plugins::class, new \Dxw\SifoccTheme\Theme\Plugins([
 //    'advanced-custom-fields/acf.php', // Path to main plugin file
 ]));
-
-$registrar->addInstance(new \Dxw\SifoccTheme\LoginRedirect());
