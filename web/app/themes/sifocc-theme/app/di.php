@@ -15,15 +15,12 @@ $registrar->addInstance(\Dxw\SifoccTheme\Lib\Whippet\TemplateTags::class, new \D
 $registrar->addInstance(\Dxw\SifoccTheme\Theme\Scripts::class, new \Dxw\SifoccTheme\Theme\Scripts(
     $registrar->getInstance(\Dxw\Iguana\Theme\Helpers::class)
 ));
-$registrar->addInstance(\Dxw\SifoccTheme\Theme\Media::class, new \Dxw\SifoccTheme\Theme\Media());
-$registrar->addInstance(\Dxw\SifoccTheme\Theme\Menus::class, new \Dxw\SifoccTheme\Theme\Menus());
-$registrar->addInstance(\Dxw\SifoccTheme\Theme\Widgets::class, new \Dxw\SifoccTheme\Theme\Widgets());
+
 $registrar->addInstance(\Dxw\SifoccTheme\Theme\Analytics::class, new \Dxw\SifoccTheme\Theme\Analytics());
 $registrar->addInstance(\Dxw\SifoccTheme\Theme\TitleTag::class, new \Dxw\SifoccTheme\Theme\TitleTag());
 $registrar->addInstance(\Dxw\SifoccTheme\Theme\Pagination::class, new \Dxw\SifoccTheme\Theme\Pagination(
     $registrar->getInstance(\Dxw\Iguana\Theme\Helpers::class)
 ));
-$registrar->addInstance(\Dxw\SifoccTheme\Theme\AdminBar::class, new \Dxw\SifoccTheme\Theme\AdminBar());
 
 // Post types and additional fields
 $registrar->addInstance(\Dxw\SifoccTheme\Posts\PostTypes::class, new \Dxw\SifoccTheme\Posts\PostTypes());
