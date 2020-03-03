@@ -1,3 +1,4 @@
+<?php get_header(); ?>
 <div class="page-section">
     <article class="container">
         <header>
@@ -16,3 +17,4 @@
         </div>
     </article>
 </div>
+<?php get_footer(); ?>

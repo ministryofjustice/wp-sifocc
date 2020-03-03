@@ -1,3 +1,4 @@
+<?php get_header(); ?>
 <div class="page-section">
     <section class="container">
         <header>
@@ -17,3 +18,4 @@
         <?php get_template_part('partials/pager') ?>
     </section>
 </div>
+<?php get_footer(); ?>

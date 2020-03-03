@@ -1,5 +1,5 @@
 <?php /* Template name: News and events */ ?>
-
+<?php get_header(); ?>
 <div class="page-section page-section-feed">
     <section>
         <header>
@@ -38,3 +38,4 @@
         <a class="button" href="<?php echo get_post_type_archive_link('events') ?>">More events</a>
     </section>
 </div>
+<?php get_footer(); ?>

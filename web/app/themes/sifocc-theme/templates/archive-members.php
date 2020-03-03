@@ -1,3 +1,4 @@
+<?php get_header(); ?>
 <div class="interactive-map-container hidden-tablet">
     <div id="interactive-map">
         <span class="sr-only">World map with SIFoCC member courts</span>
@@ -41,3 +42,4 @@
         </div>
     </aside>
 </div>
+<?php get_footer(); ?>
