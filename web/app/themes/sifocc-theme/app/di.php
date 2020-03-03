@@ -21,9 +21,6 @@ $registrar->addInstance(\Dxw\SifoccTheme\Theme\Pagination::class, new \Dxw\Sifoc
     $registrar->getInstance(\Dxw\Iguana\Theme\Helpers::class)
 ));
 
-// Post types and additional fields
-$registrar->addInstance(\Dxw\SifoccTheme\Posts\PostTypes::class, new \Dxw\SifoccTheme\Posts\PostTypes());
-
 //Map
 $registrar->addInstance(\Dxw\SifoccTheme\Theme\Map\Country::class, new \Dxw\SifoccTheme\Theme\Map\Country());
 $registrar->addInstance(\Dxw\SifoccTheme\Theme\Map\Region::class, new \Dxw\SifoccTheme\Theme\Map\Region(
