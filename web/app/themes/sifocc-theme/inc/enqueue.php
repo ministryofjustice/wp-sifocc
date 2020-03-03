@@ -24,10 +24,10 @@ if (!function_exists('sifocc_print_scripts')) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="apple-touch-icon-precomposed"
-              href="<?php echo esc_url(dirname(get_template_directory_uri()) . '/dist/img/apple-touch-icon-precomposed.png'); ?>">
+              href="<?php echo esc_url(get_template_directory_uri() . '/dist/img/apple-touch-icon-precomposed.png'); ?>">
 
         <link rel="icon" type="image/png"
-              href="<?php echo esc_url(dirname(get_template_directory_uri()) . '/dist/img/shortcut-icon.png'); ?>">
+              href="<?php echo esc_url( get_template_directory_uri() . '/dist/img/shortcut-icon.png'); ?>">
         <?php
     }
 }
@@ -38,7 +38,7 @@ if (!function_exists('moj_get_asset')) {
 
     function moj_get_asset($handle)
     {
-        $dist_dir = dirname(get_template_directory()) . '/dist';
+        $dist_dir = get_template_directory() . '/dist';
 
         $get_assets = file_get_contents($dist_dir . '/mix-manifest.json', true);
         $manifest = json_decode($get_assets, true);
@@ -59,7 +59,7 @@ if (!function_exists('moj_get_asset')) {
         $file_system_path = $dist_dir . strstr($assets[$handle], '?', true);
 
         if (file_exists($file_system_path)) {
-            return dirname(get_template_directory_uri()) . '/dist' . $assets[$handle];
+            return get_template_directory_uri() . '/dist' . $assets[$handle];
         }
 
         return false;

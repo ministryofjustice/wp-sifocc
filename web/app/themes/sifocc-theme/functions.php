@@ -3,23 +3,20 @@
 // Anything you might want to do here should be done in app/
 //
 
-require __DIR__ .'/../inc/classes/Pagination.php';
+require __DIR__ .'/inc/classes/Pagination.php';
 
-require __DIR__ .'/../inc/setup.php';
-require __DIR__ .'/../inc/enqueue.php';
-require __DIR__ .'/../inc/widgets.php';
-require __DIR__ .'/../inc/feeds.php';
+require __DIR__ .'/inc/setup.php';
+require __DIR__ .'/inc/enqueue.php';
+require __DIR__ .'/inc/widgets.php';
+require __DIR__ .'/inc/feeds.php';
 
-require __DIR__ .'/../inc/cpt/cpt-events.php';
-require __DIR__ .'/../inc/cpt/cpt-members.php';
-require __DIR__ .'/../inc/cpt/cpt-regions.php';
+require __DIR__ .'/inc/cpt/cpt-events.php';
+require __DIR__ .'/inc/cpt/cpt-members.php';
+require __DIR__ .'/inc/cpt/cpt-regions.php';
 
-require __DIR__ .'/../inc/general.php';
-require __DIR__ .'/../inc/analytics.php';
-require __DIR__ .'/../inc/map.php';
+require __DIR__ .'/inc/general.php';
+require __DIR__ .'/inc/analytics.php';
+require __DIR__ .'/inc/map.php';
 
-/*Old Framework*/
-//$registrar = require __DIR__.'/../app/load.php';
-//$registrar->register();
 
 
