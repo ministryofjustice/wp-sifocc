@@ -29,8 +29,3 @@ $registrar->addInstance(\Dxw\SifoccTheme\Theme\Map\Data::class, new \Dxw\SifoccT
 $registrar->addInstance(\Dxw\SifoccTheme\Theme\Map\Script::class, new \Dxw\SifoccTheme\Theme\Map\Script(
     $registrar->getInstance(\Dxw\SifoccTheme\Theme\Map\Data::class)
 ));
-
-// Plugin dependency check - pass in any required plugins
-$registrar->addInstance(\Dxw\SifoccTheme\Theme\Plugins::class, new \Dxw\SifoccTheme\Theme\Plugins([
-//    'advanced-custom-fields/acf.php', // Path to main plugin file
-]));
