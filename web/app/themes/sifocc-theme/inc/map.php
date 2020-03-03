@@ -4,7 +4,7 @@ if (!function_exists('sifocc_enqueue_map_script')) {
 
     function sifocc_enqueue_map_script()
     {
-        wp_enqueue_script('map', dirname(get_template_directory_uri()).'/dist/' . 'js/map.min.js', ['main']);
+        wp_enqueue_script('map', moj_get_asset('map'), ['main-js']);
         $data = sifocc_countries_and_courts_data();
         wp_localize_script('map', 'mapData', $data);
     }

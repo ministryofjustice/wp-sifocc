@@ -6,6 +6,7 @@
 require __DIR__ .'/../inc/classes/Pagination.php';
 
 require __DIR__ .'/../inc/setup.php';
+require __DIR__ .'/../inc/enqueue.php';
 require __DIR__ .'/../inc/widgets.php';
 
 require __DIR__ .'/../inc/cpt/cpt-events.php';
