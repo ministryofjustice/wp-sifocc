@@ -9,10 +9,5 @@
             ));
         }
         ?>
-        <?php if (!is_user_logged_in()) : ?>
-            <div class="cta">
-                <a href="<?php echo wp_login_url() ?>" class="button">Members login</a>
-            </div>
-        <?php endif ?>
     </div>
 </nav>
