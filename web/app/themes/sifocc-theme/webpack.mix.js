@@ -6,7 +6,9 @@ const _asset = './assets/';
 mix_.setPublicPath('./dist')
     .copy(_asset + 'img/*', dist + 'img/')
     .sass(_asset + 'scss/main.scss',  dist + 'css/main.min.css', {
-        includePaths: ['node_modules/bourbon/core', 'node_modules/bourbon-neat/core', 'node_modules/node-normalize-scss']
+        sassOptions: {
+            includePaths: ['node_modules/bourbon/core', 'node_modules/bourbon-neat/core', 'node_modules/node-normalize-scss']
+        }
     })
     .sass(_asset + 'scss/error-pages/errors/404.sass', dist + 'css/404.css')
     .sass(_asset + 'scss/error-pages/errors/error-page.sass', dist + 'css/error-page.css')
