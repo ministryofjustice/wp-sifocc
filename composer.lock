@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ae8a20f5975c69cc24b366237a357082",
+    "content-hash": "150051e966deccceb2cdbebcc938ced0",
     "packages": [
         {
             "name": "acf/advanced-custom-fields-pro",
@@ -2161,15 +2161,15 @@
         },
         {
             "name": "wpackagist-plugin/analytify-analytics-dashboard-widget",
-            "version": "1.1.2",
+            "version": "1.1.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/analytify-analytics-dashboard-widget/",
-                "reference": "tags/1.1.2"
+                "reference": "tags/1.1.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/analytify-analytics-dashboard-widget.1.1.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/analytify-analytics-dashboard-widget.1.1.3.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -2233,15 +2233,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-analytify",
-            "version": "2.2.13",
+            "version": "3.0.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-analytify/",
-                "reference": "tags/2.2.13"
+                "reference": "tags/3.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-analytify.2.2.13.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-analytify.3.0.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
