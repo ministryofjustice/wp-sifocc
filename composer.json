@@ -33,7 +33,6 @@
         "acf/advanced-custom-fields-pro": "*",
         "wpackagist-plugin/wp-accessibility": "*",
         "wpackagist-plugin/classic-editor": "*",
-        "wpackagist-plugin/user-switching": "*",
         "ministryofjustice/wp-user-roles": "*",
         "thadafinser/user-agent-parser": "^2.0",
         "browscap/browscap-php": "^4.2",
