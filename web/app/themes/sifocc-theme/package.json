@@ -24,23 +24,24 @@
         "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
         "production": "NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
     },
+    "dependencies": {
+        "jquery": "^3.5.1"
+    },
     "devDependencies": {
         "bourbon": "^7.0.0",
         "bourbon-neat": "^4.0.0",
         "calc-polyfill": "^0.1.0",
-        "copy-webpack-plugin": "^5.1.1",
-        "cross-env": "^7.0.2",
-        "imagemin-mozjpeg": "^8.0.0",
+        "imagemin-mozjpeg": "^9.0.0",
         "imagemin-webpack-plugin": "^2.4.2",
-        "jquery": "^3.5.1",
-        "laravel-mix": "^5.0.4",
+        "laravel-mix": "^5.0.5",
         "laravel-mix-imagemin": "^1.0.3",
         "laravel-mix-svg": "^0.4.1",
-        "node-normalize-scss": "^8.0.1",
+        "normalize.css": "^8.0.1",
+        "node-normalize-scss": "^8.1.2",
         "node-sass": "^4.14.1",
-        "resolve-url-loader": "^3.1.0",
-        "sass": "^1.26.8",
-        "sass-loader": "^8.0.2",
-        "vue-template-compiler": "^2.6.11"
+        "resolve-url-loader": "^3.1.1",
+        "sass": "^1.26.10",
+        "sass-loader": "^10.0.1",
+        "vue-template-compiler": "^2.6.12"
     }
 }

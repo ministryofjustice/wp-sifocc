@@ -10,6 +10,7 @@ deep-clean:
 	@if [ -d ".git" ]; then git clean -xdf --exclude ".idea"; fi
 
 run:
+	cp .env.example .env
 	docker-compose up
 
 # Open a bash shell on the running container
