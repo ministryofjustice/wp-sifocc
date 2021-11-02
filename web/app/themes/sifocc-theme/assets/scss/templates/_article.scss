@@ -23,10 +23,6 @@
 }
 
 .featured-article-list-item {
-  display: flex;
-  @include flex-direction(row);
-  align-items: flex-start;
-  margin-top: $base;
 
   &:first-of-type {
     margin-top: 0;
@@ -48,6 +44,7 @@
     background-color: $mediumGrey;
     color: $textColour;
     text-align: center;
+    float: left;
 
     // No flexbox support
     .no-flexbox & {
@@ -76,6 +73,12 @@
   }
 
   .content {
+
+    margin-left: 100px;
+
+    @include grid-media($grid-mobile) {
+        margin-left: 0px;
+    }
 
     // No flexbox support
     .no-flexbox & {

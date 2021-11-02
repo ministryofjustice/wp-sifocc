@@ -49,5 +49,28 @@
                 ?>
             </div>
         </section>
+        <section>
+            <header>
+                <h1>Events</h1>
+            </header>
+            <div class="featured-events">
+                <?php
+                // display sticky posts
+
+                $featured_args = array(
+                    'post_type' => 'events',
+                    'meta_key'         =>'start_date',
+                    'orderby'         =>'meta_value_num',
+                    'order'           =>'DESC',
+                    'posts_per_page' => 1
+                );
+                global $post;
+                $featured_posts = get_posts($featured_args);
+                foreach ($featured_posts as $post) : setup_postdata($post);
+                    get_template_part('partials/event-list-item');
+                endforeach;
+                ?>
+            </div>
+        </section>
     </div>
 <?php get_footer(); ?>
