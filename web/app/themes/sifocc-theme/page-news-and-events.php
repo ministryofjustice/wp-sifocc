@@ -25,12 +25,13 @@
         $events_args = array(
             'posts_per_page'  => 3,
             'post_type'       => 'events',
-            'metakey'         =>'start_date',
+            'meta_key'         =>'start_date',
             'orderby'         =>'meta_value_num',
-            'order'           =>'ASC'
+            'order'           =>'DESC'
         );
         global $post;
         $events_posts = get_posts($events_args);
+
         foreach($events_posts as $post) : setup_postdata($post);
             get_template_part('partials/event-list-item');
         endforeach;
