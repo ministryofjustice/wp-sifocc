@@ -13,8 +13,8 @@ mix_.sass(_asset + 'scss/main.scss', dist + 'css/main.min.css', {
         ]
     }
 })
-    .sass(_asset + 'scss/error-pages/errors/404.sass', dist + 'css/404.css')
-    .sass(_asset + 'scss/error-pages/errors/error-page.sass', dist + 'css/error-page.css')
+    .sass(_asset + 'scss/error-pages/errors/404.scss', dist + 'css/404.css')
+    .sass(_asset + 'scss/error-pages/errors/error-page.scss', dist + 'css/error-page.css')
     .js(_asset + 'js/main.js', dist + 'js/main.min.js')
     .js(_asset + 'js/map.js', dist + 'js/map.min.js')
     .copy(_asset + 'img/*', dist + 'img/')

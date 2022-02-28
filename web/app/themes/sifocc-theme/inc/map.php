@@ -18,8 +18,10 @@ if (!function_exists('sifocc_get_all_court_names')) {
     {
         $courtNames = [];
         $courts = get_field('courts', $country->ID);
-        foreach ($courts as $court) {
-            $courtNames[] = "<dd>" . $court['court_name'] . "</dd>";
+        if(!empty($courts)){
+            foreach ($courts as $court) {
+                $courtNames[] = "<dd>" . $court['court_name'] . "</dd>";
+            }
         }
         return $courtNames;
     }
