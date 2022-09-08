@@ -34,7 +34,9 @@ wp_body_open();
 <div class="alert"><p><?php _e('You are using an <strong>outdated</strong> browser. Please <a
         href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'roots'); ?></p></div>
 <![endif]-->
-
+<?php
+include "inc/emergency-banner.php";
+?>
 <?php get_template_part('partials/global-header'); ?>
 
 <main class="main" role="main">
