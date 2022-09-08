@@ -17,6 +17,7 @@ require __DIR__ .'/inc/cpt/cpt-regions.php';
 require __DIR__ .'/inc/general.php';
 require __DIR__ .'/inc/analytics.php';
 require __DIR__ .'/inc/map.php';
+require __DIR__ .'/inc/emergency-banner-settings.php';
 
 
 
