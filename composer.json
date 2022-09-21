@@ -35,7 +35,7 @@
         "wpackagist-plugin/wp-analytify":"*",
         "wpackagist-plugin/analytify-analytics-dashboard-widget":"*",
         "ministryofjustice/wp-rewrite-media-to-s3": "*",
-        "acf/advanced-custom-fields-pro": "*",
+        "acf/advanced-custom-fields-pro": "^5.12.3",
         "wpackagist-plugin/wp-accessibility": "*",
         "wpackagist-plugin/classic-editor": "*",
         "ministryofjustice/wp-user-roles": "*",
